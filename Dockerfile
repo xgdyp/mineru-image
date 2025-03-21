@@ -41,7 +41,7 @@ RUN /bin/bash -c "wget https://github.com/opendatalab/MinerU/raw/master/magic-pd
     cp magic-pdf.template.json /root/magic-pdf.json && \
     source /opt/mineru_venv/bin/activate && \
     pip3 install -U magic-pdf && \
-    pip3 install -U git+https://gitee.com/myhloli/MinerU.git@dev\
+    pip3 install -U git+https://gitee.com/myhloli/MinerU.git@dev && \
     pip3 cache purge"
 
 # Download models and update the configuration file
