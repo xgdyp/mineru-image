@@ -47,7 +47,7 @@ RUN /bin/bash -c "wget https://github.com/opendatalab/MinerU/raw/master/magic-pd
 # Download models and update the configuration file
 RUN /bin/bash -c "pip3 install huggingface_hub && \
     wget https://github.com/opendatalab/MinerU/raw/master/scripts/download_models_hf.py --no-check-certificate -O download_models.py && \
-    python3 download_models.py && \
+    # python3 download_models.py && \
     sed -i 's|cpu|cuda|g' /root/magic-pdf.json"
 
 # Set the entry point to activate the virtual environment and run the command line tool
