@@ -52,3 +52,5 @@ RUN /bin/bash -c "pip3 install huggingface_hub && \
 
 # Set the entry point to activate the virtual environment and run the command line tool
 ENTRYPOINT ["/bin/bash", "-c", "source /opt/mineru_venv/bin/activate && exec \"$@\"", "--"]
+
+
